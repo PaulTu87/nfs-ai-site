@@ -34,7 +34,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center">
-          <img src="/logo.png" className="h-14 w-14 rounded-full object-cover border-2 border-cyan-400" alt="NFS Studio" />
+          <img src="/logo.png" className="h-14 w-14 rounded-full object-cover" alt="NFS Studio" />
         </a>
 
         {/* Desktop nav */}
@@ -43,10 +43,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200"
-              style={{ "--hover-color": "#00bcd4" }}
-              onMouseEnter={(e) => (e.target.style.color = "#00bcd4")}
-              onMouseLeave={(e) => (e.target.style.color = "")}
+              className="nav-link text-sm font-medium"
             >
               {link.label}
             </a>
@@ -83,7 +80,6 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               className="text-slate-300 hover:text-white py-2 px-3 rounded-lg text-sm font-medium transition-colors"
-              style={{ color: "" }}
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
