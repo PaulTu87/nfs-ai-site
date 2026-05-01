@@ -170,7 +170,7 @@ export default function Process() {
   }, []);
 
   return (
-    <section id="process" className="py-24 relative overflow-hidden" style={{ background: "#0d1f2d" }}>
+    <section id="process" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 dot-grid opacity-20 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative">
@@ -196,16 +196,16 @@ export default function Process() {
           {steps.map((step) => (
             <div key={step.num}
               className="fade-up relative flex flex-col p-8 rounded-2xl transition-all duration-300"
-              style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)" }}
+              style={{ background: "rgba(13,31,45,0.85)", backdropFilter: "blur(8px)", WebkitBackdropFilter: "blur(8px)", border: "1px solid rgba(255,255,255,0.08)" }}
               onMouseEnter={e => {
                 e.currentTarget.style.borderColor = "rgba(0,188,212,0.4)";
-                e.currentTarget.style.background = "rgba(0,188,212,0.05)";
+                e.currentTarget.style.background = "rgba(13,31,45,0.92)";
                 e.currentTarget.style.transform = "translateY(-5px)";
                 e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,188,212,0.1)";
               }}
               onMouseLeave={e => {
                 e.currentTarget.style.borderColor = "rgba(255,255,255,0.08)";
-                e.currentTarget.style.background = "rgba(255,255,255,0.03)";
+                e.currentTarget.style.background = "rgba(13,31,45,0.85)";
                 e.currentTarget.style.transform = "translateY(0)";
                 e.currentTarget.style.boxShadow = "none";
               }}

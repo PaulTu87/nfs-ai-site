@@ -80,8 +80,7 @@ export default function Results() {
   const cardsRef = useScrollAnimationChildren(0.05);
 
   return (
-    <section id="results" className="py-24 relative overflow-hidden"
-      style={{ background: "linear-gradient(180deg, #0a1a27 0%, #0d1f2d 100%)" }}>
+    <section id="results" className="py-24 relative overflow-hidden">
       {/* Glow */}
       <div className="absolute pointer-events-none" style={{
         bottom: "-100px", right: "-100px",
@@ -111,15 +110,15 @@ export default function Results() {
           {globalStats.map((s) => (
             <div key={s.label}
               className="fade-in text-center py-8 px-4 rounded-2xl transition-all duration-300"
-              style={{ background: "rgba(0,188,212,0.07)", border: "1px solid rgba(0,188,212,0.2)" }}
+              style={{ background: "rgba(13,31,45,0.85)", backdropFilter: "blur(8px)", WebkitBackdropFilter: "blur(8px)", border: "1px solid rgba(0,188,212,0.2)" }}
               onMouseEnter={e => {
-                e.currentTarget.style.background = "rgba(0,188,212,0.12)";
+                e.currentTarget.style.background = "rgba(13,31,45,0.92)";
                 e.currentTarget.style.borderColor = "rgba(0,188,212,0.4)";
                 e.currentTarget.style.transform = "translateY(-4px)";
                 e.currentTarget.style.boxShadow = "0 12px 30px rgba(0,188,212,0.15)";
               }}
               onMouseLeave={e => {
-                e.currentTarget.style.background = "rgba(0,188,212,0.07)";
+                e.currentTarget.style.background = "rgba(13,31,45,0.85)";
                 e.currentTarget.style.borderColor = "rgba(0,188,212,0.2)";
                 e.currentTarget.style.transform = "translateY(0)";
                 e.currentTarget.style.boxShadow = "none";

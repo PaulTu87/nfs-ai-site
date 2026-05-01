@@ -88,7 +88,6 @@ export default function Hero() {
     <section
       id="hero"
       className="relative min-h-screen flex items-center overflow-hidden"
-      style={{ background: "linear-gradient(160deg, #0d1f2d 0%, #112233 55%, #091d2c 100%)" }}
     >
       {/* Animated gradient sweep — very slow */}
       <div
@@ -101,7 +100,7 @@ export default function Hero() {
       />
 
       {/* Architectural line grid */}
-      <div className="absolute inset-0 line-grid pointer-events-none" style={{ opacity: 0.9 }} />
+      <div className="absolute inset-0 line-grid pointer-events-none" style={{ opacity: 0.04 }} />
 
       {/* Grain texture */}
       <div
@@ -209,7 +208,7 @@ export default function Hero() {
             animation: "fadeSlideIn 1s cubic-bezier(0.16,1,0.3,1) 0.4s both",
           }}
         >
-          <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl" style={{ background: "rgba(13,31,45,0.85)", backdropFilter: "blur(8px)", WebkitBackdropFilter: "blur(8px)" }}>
             <img
               src="/hero.jpg"
               alt="AI Business Solutions"
@@ -235,6 +234,7 @@ export default function Hero() {
               background: "rgba(13,31,45,0.9)",
               border: "1px solid rgba(0,188,212,0.3)",
               backdropFilter: "blur(8px)",
+              WebkitBackdropFilter: "blur(8px)",
               animation: "fadeSlideIn 0.7s cubic-bezier(0.16,1,0.3,1) 1s both",
             }}
           >
@@ -249,6 +249,7 @@ export default function Hero() {
               background: "rgba(13,31,45,0.9)",
               border: "1px solid rgba(0,188,212,0.25)",
               backdropFilter: "blur(8px)",
+              WebkitBackdropFilter: "blur(8px)",
               animation: "fadeSlideIn 0.7s cubic-bezier(0.16,1,0.3,1) 1.2s both",
             }}
           >

@@ -56,7 +56,6 @@ export default function Contact() {
     <section
       id="contact"
       className="py-24 relative overflow-hidden"
-      style={{ background: "linear-gradient(180deg, #0d1f2d 0%, #091520 100%)" }}
     >
       {/* Glow */}
       <div
@@ -70,7 +69,7 @@ export default function Contact() {
 
       <div className="max-w-7xl mx-auto px-6 relative">
         {/* Header */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-14" data-reveal>
           <div
             className="inline-block mb-4 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest"
             style={{ background: "rgba(0,188,212,0.1)", color: "#00bcd4", border: "1px solid rgba(0,188,212,0.25)" }}
@@ -206,7 +205,7 @@ export default function Contact() {
           <div ref={rightRef} className="slide-right">
             <div
               className="p-8 rounded-2xl"
-              style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)" }}
+              style={{ background: "rgba(13,31,45,0.85)", backdropFilter: "blur(8px)", WebkitBackdropFilter: "blur(8px)", border: "1px solid rgba(255,255,255,0.08)" }}
             >
               {state.succeeded ? (
                 <div className="text-center py-10">

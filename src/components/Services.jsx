@@ -239,16 +239,7 @@ export default function Services() {
   const gridRef = useScrollAnimationChildren(0.05);
 
   return (
-    <section id="services" className="py-24 relative overflow-hidden" style={{ background: "#0d1f2d" }}>
-      {/* Background image with dark overlay */}
-      <div className="absolute inset-0 pointer-events-none">
-        <img
-          src="/services.jpg"
-          alt=""
-          className="w-full h-full object-cover opacity-15"
-        />
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(13,31,45,0.6) 0%, rgba(13,31,45,0.85) 40%, #0d1f2d 100%)" }} />
-      </div>
+    <section id="services" className="py-24 relative overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-6 relative">
         <div ref={titleRef} className="fade-up text-center mb-16">

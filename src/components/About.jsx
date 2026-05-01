@@ -38,7 +38,6 @@ export default function About() {
     <section
       id="about"
       className="py-24 relative overflow-hidden"
-      style={{ background: "linear-gradient(180deg, #0d1f2d 0%, #0a1a27 100%)" }}
     >
       {/* Background glow */}
       <div className="absolute pointer-events-none" style={{
@@ -66,7 +65,7 @@ export default function About() {
               className="absolute bottom-6 left-6 right-6 px-5 py-4 rounded-xl"
               style={{ background: "rgba(13,31,45,0.75)", backdropFilter: "blur(8px)", border: "1px solid rgba(0,188,212,0.2)" }}
             >
-              <div className="text-sm font-semibold text-white">NFS Studio · Los Angeles</div>
+              <div className="text-sm font-semibold text-white">NFS Studio · LA + Remote</div>
               <div className="text-xs mt-0.5" style={{ color: "#00bcd4" }}>AI Consulting & Automation</div>
             </div>
           </div>
@@ -103,7 +102,7 @@ export default function About() {
               { num: "2024", label: "Founded" },
             ].map((s) => (
               <div key={s.label} className="text-center py-4 rounded-xl"
-                style={{ background: "rgba(0,188,212,0.06)", border: "1px solid rgba(0,188,212,0.15)" }}>
+                style={{ background: "rgba(13,31,45,0.85)", backdropFilter: "blur(8px)", WebkitBackdropFilter: "blur(8px)", border: "1px solid rgba(0,188,212,0.15)" }}>
                 <div className="text-2xl font-black mb-0.5" style={{ color: "#00bcd4" }}>{s.num}</div>
                 <div className="text-xs text-slate-400">{s.label}</div>
               </div>
@@ -115,9 +114,9 @@ export default function About() {
             {values.map((v) => (
               <div key={v.title}
                 className="flex gap-4 p-5 rounded-2xl transition-all duration-300"
-                style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)" }}
-                onMouseEnter={e => { e.currentTarget.style.borderColor = "rgba(0,188,212,0.35)"; e.currentTarget.style.background = "rgba(0,188,212,0.05)"; }}
-                onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.07)"; e.currentTarget.style.background = "rgba(255,255,255,0.03)"; }}
+                style={{ background: "rgba(13,31,45,0.85)", backdropFilter: "blur(8px)", WebkitBackdropFilter: "blur(8px)", border: "1px solid rgba(255,255,255,0.07)" }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = "rgba(0,188,212,0.35)"; e.currentTarget.style.background = "rgba(13,31,45,0.92)"; }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.07)"; e.currentTarget.style.background = "rgba(13,31,45,0.85)"; }}
               >
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
                   style={{ background: "rgba(0,188,212,0.12)" }}>

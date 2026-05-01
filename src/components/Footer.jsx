@@ -49,15 +49,12 @@ export default function Footer() {
   return (
     <footer
       className="pt-16 pb-8"
-      style={{
-        background: "#091520",
-        borderTop: "1px solid rgba(0,188,212,0.12)",
-      }}
+      style={{ borderTop: "1px solid rgba(0,188,212,0.12)" }}
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
           {/* Brand col */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2" data-reveal>
             <div className="flex items-center gap-3 mb-5">
               <div
                 className="w-9 h-9 rounded-lg flex items-center justify-center text-sm font-black"
@@ -138,7 +135,7 @@ export default function Footer() {
           style={{ borderTop: "1px solid rgba(255,255,255,0.07)" }}
         >
           <p className="text-xs text-slate-500">
-            © 2024 NFS Studio. All rights reserved.
+            © 2025 NFS Studio. All rights reserved.
           </p>
           <div className="flex gap-5">
             {["Privacy Policy", "Terms of Service"].map((t) => (
